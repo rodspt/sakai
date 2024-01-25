@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/(full-page)/layout.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1706140303882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706140384534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n export default function SimpleLayout({ children }: SimpleLayoutProps) {\n     return (\n         <React.Fragment>\n             {children}\n-           {/* <AppConfig simple /> */}\n+         \n         </React.Fragment>\n     );\n }\n"
+                },
+                {
+                    "date": 1706140394857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n export default function SimpleLayout({ children }: SimpleLayoutProps) {\n     return (\n         <React.Fragment>\n             {children}\n-         \n+           {/* <AppConfig simple /> */}\n         </React.Fragment>\n     );\n }\n"
+                }
+            ],
+            "date": 1706140303882,
+            "name": "Commit-0",
+            "content": "import { Metadata } from 'next';\nimport AppConfig from '../../layout/AppConfig';\nimport React from 'react';\n\ninterface SimpleLayoutProps {\n    children: React.ReactNode;\n}\n\nexport const metadata: Metadata = {\n    title: 'PrimeReact Sakai',\n    description: 'The ultimate collection of design-agnostic, flexible and accessible React UI Components.'\n};\n\nexport default function SimpleLayout({ children }: SimpleLayoutProps) {\n    return (\n        <React.Fragment>\n            {children}\n           {/* <AppConfig simple /> */}\n        </React.Fragment>\n    );\n}\n"
+        }
+    ]
+}
