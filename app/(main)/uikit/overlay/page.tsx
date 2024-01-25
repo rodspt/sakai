@@ -92,7 +92,7 @@ const OverlayDemo = () => {
     const basicDialogFooter = <Button type="button" label="OK" onClick={() => setDisplayBasic(false)} icon="pi pi-check" outlined />;
     const imageBodyTemplate = (data: Demo.Product) => (
         <img
-            src={`/demo/images/product/${data.image}`}
+            src={`/exemplo/product/${data.image}`}
             alt={data.image}
             className="product-image"
             width="60"

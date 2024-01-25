@@ -93,11 +93,11 @@ const MiscDemo = () => {
                     <h4>Avatar</h4>
                     <h5>Avatar Group</h5>
                     <AvatarGroup className="mb-3">
-                        <Avatar image={`/demo/images/avatar/amyelsner.png`} size="large" shape="circle"></Avatar>
-                        <Avatar image={`/demo/images/avatar/asiyajavayant.png`} size="large" shape="circle"></Avatar>
-                        <Avatar image={`/demo/images/avatar/onyamalimba.png`} size="large" shape="circle"></Avatar>
-                        <Avatar image={`/demo/images/avatar/ionibowcher.png`} size="large" shape="circle"></Avatar>
-                        <Avatar image={`/demo/images/avatar/xuxuefeng.png`} size="large" shape="circle"></Avatar>
+                        <Avatar image={`/exemplo/avatar/amyelsner.png`} size="large" shape="circle"></Avatar>
+                        <Avatar image={`/exemplo/avatar/asiyajavayant.png`} size="large" shape="circle"></Avatar>
+                        <Avatar image={`/exemplo/avatar/onyamalimba.png`} size="large" shape="circle"></Avatar>
+                        <Avatar image={`/exemplo/avatar/ionibowcher.png`} size="large" shape="circle"></Avatar>
+                        <Avatar image={`/exemplo/avatar/xuxuefeng.png`} size="large" shape="circle"></Avatar>
                         <Avatar label="+2" shape="circle" size="large" style={{ backgroundColor: '#9c27b0', color: '#ffffff' }}></Avatar>
                     </AvatarGroup>
 
@@ -179,18 +179,18 @@ const MiscDemo = () => {
 
                     <h5>Image</h5>
                     <div className="flex align-items-center flex-wrap gap-1">
-                        <Chip label="Amy Elsner" image={`/demo/images/avatar/amyelsner.png`} />
-                        <Chip label="Asiya Javayant" image={`/demo/images/avatar/asiyajavayant.png`} />
-                        <Chip label="Onyama Limba" image={`/demo/images/avatar/onyamalimba.png`} />
-                        <Chip label="Xuxue Feng" image={`/demo/images/avatar/xuxuefeng.png`} removable />
+                        <Chip label="Amy Elsner" image={`/exemplo/avatar/amyelsner.png`} />
+                        <Chip label="Asiya Javayant" image={`/exemplo/avatar/asiyajavayant.png`} />
+                        <Chip label="Onyama Limba" image={`/exemplo/avatar/onyamalimba.png`} />
+                        <Chip label="Xuxue Feng" image={`/exemplo/avatar/xuxuefeng.png`} removable />
                     </div>
 
                     <h5>Styling</h5>
                     <div className="flex align-items-center flex-wrap gap-1 custom-chip">
                         <Chip label="Action" />
                         <Chip label="Apple" icon="pi pi-apple" />
-                        <Chip label="Onyama Limba" image={`/demo/images/avatar/onyamalimba.png`} />
-                        <Chip label="Xuxue Feng" image={`/demo/images/avatar/xuxuefeng.png`} removable />
+                        <Chip label="Onyama Limba" image={`/exemplo/avatar/onyamalimba.png`} />
+                        <Chip label="Xuxue Feng" image={`/exemplo/avatar/xuxuefeng.png`} removable />
                     </div>
                 </div>
 

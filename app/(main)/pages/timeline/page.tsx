@@ -15,7 +15,7 @@ const TimelineDemo = () => {
             date: '15/10/2025 10:30',
             icon: 'pi pi-shopping-cart',
             color: '#9C27B0',
-            image: 'game-controller.jpg'
+            image: 'gaming-set.jpg'
         },
         {
             status: 'Processing',
@@ -42,7 +42,7 @@ const TimelineDemo = () => {
     const customizedContent = (item: CustomEvent) => {
         return (
             <Card title={item.status} subTitle={item.date}>
-                {item.image && <img src={`/demo/images/product/${item.image}`} onError={(e) => (e.currentTarget.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')} alt={item.name} width={200} className="shadow-2 mb-3" />}
+                {item.image && <img src={`/exemplo/product/${item.image}`} onError={(e) => (e.currentTarget.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')} alt={item.name} width={200} className="shadow-2 mb-3" />}
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
                     quas!

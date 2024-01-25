@@ -319,7 +319,7 @@ const TableDemo = () => {
     const countryBodyTemplate = (rowData: Demo.Customer) => {
         return (
             <React.Fragment>
-                <img alt="flag" src={`/flag/flag_placeholder.png`} className={`flag flag-${rowData.country.code}`} width={30} />
+                <img alt="flag" src={`/exemplo/flag/flag_placeholder.png`} className={`flag flag-${rowData.country.code}`} width={30} />
                 <span style={{ marginLeft: '.5em', verticalAlign: 'middle' }}>{rowData.country.name}</span>
             </React.Fragment>
         );
@@ -339,7 +339,7 @@ const TableDemo = () => {
             <React.Fragment>
                 <img
                     alt={representative.name}
-                    src={`/avatar/${representative.image}`}
+                    src={`/exemplo/avatar/${representative.image}`}
                     onError={(e) => ((e.target as HTMLImageElement).src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')}
                     width={32}
                     style={{ verticalAlign: 'middle' }}
@@ -361,7 +361,7 @@ const TableDemo = () => {
     const representativesItemTemplate = (option: any) => {
         return (
             <div className="p-multiselect-representative-option">
-                <img alt={option.name} src={`/avatar/${option.image}`} width={32} style={{ verticalAlign: 'middle' }} />
+                <img alt={option.name} src={`/exemplo/avatar/${option.image}`} width={32} style={{ verticalAlign: 'middle' }} />
                 <span style={{ marginLeft: '.5em', verticalAlign: 'middle' }}>{option.name}</span>
             </div>
         );
@@ -457,7 +457,7 @@ const TableDemo = () => {
     };
 
     const imageBodyTemplate = (rowData: Demo.Product) => {
-        return <img src={`/product/${rowData.image}`} onError={(e) => ((e.target as HTMLImageElement).src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')} alt={rowData.image} className="shadow-2" width={100} />;
+        return <img src={`/exemplo/product/${rowData.image}`} onError={(e) => ((e.target as HTMLImageElement).src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')} alt={rowData.image} className="shadow-2" width={100} />;
     };
 
     const priceBodyTemplate = (rowData: Demo.Product) => {
@@ -493,7 +493,7 @@ const TableDemo = () => {
     const headerTemplate = (data: Demo.Customer) => {
         return (
             <React.Fragment>
-                <img alt={data.representative.name} src={`/avatar/${data.representative.image}`} width="32" style={{ verticalAlign: 'middle' }} />
+                <img alt={data.representative.name} src={`/exemplo/avatar/${data.representative.image}`} width="32" style={{ verticalAlign: 'middle' }} />
                 <span className="font-bold ml-2">{data.representative.name}</span>
             </React.Fragment>
         );

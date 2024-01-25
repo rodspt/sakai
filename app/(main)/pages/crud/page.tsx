@@ -266,7 +266,7 @@ const Crud = () => {
         return (
             <>
                 <span className="p-column-title">Imagem</span>
-                <img src={`/product/${rowData.image}`} alt={rowData.image} className="shadow-2" width="100" />
+                <img src={`/exemplo/product/${rowData.image}`} alt={rowData.image} className="shadow-2" width="100" />
             </>
         );
     };
@@ -381,7 +381,7 @@ const Crud = () => {
                     </DataTable>
 
                     <Dialog visible={productDialog} style={{ width: '450px' }} header="Detalhes do Produto" modal className="p-fluid" footer={productDialogFooter} onHide={hideDialog}>
-                        {product.image && <img src={`/product/${product.image}`} alt={product.image} width="150" className="mt-0 mx-auto mb-5 block shadow-2" />}
+                        {product.image && <img src={`/exemplo/product/${product.image}`} alt={product.image} width="150" className="mt-0 mx-auto mb-5 block shadow-2" />}
                         <div className="field">
                             <label htmlFor="name">Nome</label>
                             <InputText

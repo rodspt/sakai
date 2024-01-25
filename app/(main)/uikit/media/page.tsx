@@ -50,16 +50,104 @@ const MediaDemo = () => {
     ];
 
     useEffect(() => {
-       // ProductService.getProductsSmall().then((products) => setProducts(products));
+       //OLDD ProductService.getProductsSmall().then((products) => setProducts(products));
+       //NEW
+        const myProdutos:Demo.Product[]  = [{
+            "id": "1000",
+            "code": "f230fh0g3",
+            "name": "PrimeBlocks",
+            "description": "Product Description",
+            "image": "headphones.jpg",
+            "price": 65,
+            "date": "09/13/2022",
+            "category": "Fone",
+            "quantity": 24,
+            "inventoryStatus": "INSTOCK",
+            "rating": 5
+        },
+        {
+            "id": "1001",
+            "code": "nvklal433",
+            "name": "Logo",
+            "description": "Product Description",
+            "image": "gaming-set.jpg",
+            "price": 72,
+            "date": "09/12/2022",
+            "category": "Game",
+            "quantity": 61,
+            "inventoryStatus": "OUTOFSTOCK",
+            "rating": 4
+        }];
+        setProducts(myProdutos);
+     
 
-       // PhotoService.getImages().then((images) => setImages(images));
+    //OLDD PhotoService.getImages().then((images) => setImages(images));
+    //NEW
+     const myPhotos:Demo.Photo[] =  [
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria1.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria1s.jpg",
+            "alt": "Description for Image 1",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria2.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria2s.jpg",
+            "alt": "Description for Image 2",
+            "title": "Title 2"
+        },
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria3.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria3s.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria1.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria1s.jpg",
+            "alt": "Description for Image 1",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria2.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria2s.jpg",
+            "alt": "Description for Image 2",
+            "title": "Title 2"
+        },
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria3.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria3s.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria1.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria1s.jpg",
+            "alt": "Description for Image 1",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria2.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria2s.jpg",
+            "alt": "Description for Image 2",
+            "title": "Title 2"
+        },
+        {
+            "itemImageSrc": "exemplo/images/galleria/galleria3.jpg",
+            "thumbnailImageSrc": "exemplo/images/galleria/galleria3s.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+    ];
+    setImages(myPhotos);
+      
     }, []);
 
     const carouselItemTemplate = (product: Demo.Product) => {
         return (
             <div className="border-1 surface-border border-round m-1 text-center py-5">
                 <div className="mb-3">
-                    <img src={`/demo/images/product/${product.image}`} alt={product.name} className="w-6 shadow-2" />
+                    <img src={`/exemplo/product/${product.image}`} alt={product.name} className="w-6 shadow-2" />
                 </div>
                 <div>
                     <h4 className="p-mb-1">{product.name}</h4>
@@ -91,7 +179,7 @@ const MediaDemo = () => {
                 <div className="card">
                     <h5>Image</h5>
                     <div className="flex justify-content-center">
-                        <Image src={`/demo/images/galleria/galleria10.jpg`} alt="Image" width="250" preview />
+                        <Image src={`/exemplo/images/galleria/galleria10.jpg`} alt="Image" width="250" preview />
                     </div>
                 </div>
             </div>

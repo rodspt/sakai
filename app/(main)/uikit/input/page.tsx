@@ -151,7 +151,7 @@ const InputDemo: Page = () => {
             <div className="flex align-items-center">
                 <img
                     alt={option.name}
-                    src={`/flag/flag_placeholder.png`}
+                    src={`/exemplo/flag/flag_placeholder.png`}
                     onError={(e) =>
                         (e.currentTarget.src =
                             "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")

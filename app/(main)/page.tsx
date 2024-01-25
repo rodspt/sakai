@@ -219,7 +219,7 @@ const Dashboard = () => {
                 <div className="card">
                     <h5>Recent Sales</h5>
                     <DataTable value={products} rows={5} paginator responsiveLayout="scroll">
-                        <Column header="Imagem" body={(data) => <img className="shadow-2" src={`/product/${data.image}`} alt={data.image} width="50" />} />
+                        <Column header="Imagem" body={(data) => <img className="shadow-2" src={`/exemplo/product/${data.image}`} alt={data.image} width="50" />} />
                         <Column field="name" header="Nome" sortable style={{ width: '35%' }} />
                         <Column field="price" header="Preço" sortable style={{ width: '35%' }} body={(data) => formatCurrency(data.price)} />
                         <Column
