@@ -104,3 +104,18 @@ export interface AppMenuItemProps {
     root?: boolean;
     className?: string;
 }
+
+/*Meus types*/
+export interface InputValue {
+    name: string;
+    code: number;
+}
+
+export interface UserRegister  {
+    cpf?: string;
+    nome?: string;
+    email?: string;
+    perfil_id?: number| null;
+    password?: string;
+    password_confirmation?: string;
+  };

@@ -6,7 +6,7 @@ import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
 import { Menu } from 'primereact/menu';
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import { LayoutContext } from '../../globals/context/layoutcontext';
+import { LayoutContext } from '../../../globals/contexts/layoutcontext';
 import Link from 'next/link';
 import { Demo } from '@/types';
 import { ChartData, ChartOptions } from 'chart.js';

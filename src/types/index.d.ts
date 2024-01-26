@@ -21,7 +21,9 @@ import {
     AppTopbarRef,
     MenuModelItem,
     AppMenuItemProps,
-    AppMenuItem
+    AppMenuItem,
+
+    InputValue
 } from './layout';
 import { Demo, LayoutType, SortOrderType, CustomEvent, ChartDataState, ChartOptionsState, AppMailSidebarItem, AppMailReplyProps, AppMailProps } from './demo';
 
@@ -58,5 +60,8 @@ export type {
     AppMailSidebarItem,
     AppMailReplyProps,
     AppMailProps,
-    AppMenuItem
+    AppMenuItem,
+
+    InputValue,
+    UserRegister
 };
