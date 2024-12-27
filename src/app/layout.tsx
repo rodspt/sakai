@@ -5,6 +5,7 @@ import 'primeicons/primeicons.css';
 import '@styles/layout/layout.scss';
 import { PrimeReactProvider } from 'primereact/api';
 import { LayoutProvider } from '@providers/LayoutContext';
+import CustomSessionProvider from '@providers/CustomSessionProvider';
 
 interface RootLayoutProps {
     children: React.ReactNode;
