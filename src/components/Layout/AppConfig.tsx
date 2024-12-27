@@ -7,7 +7,7 @@ import { RadioButton, RadioButtonChangeEvent } from 'primereact/radiobutton';
 import { Sidebar } from 'primereact/sidebar';
 import { classNames } from 'primereact/utils';
 import React, { useContext, useEffect, useState } from 'react';
-import { LayoutContext } from '@providers/layoutcontext';
+import { LayoutContext } from '@/globals/providers/LayoutContext';
 import { AppConfigProps, LayoutConfig, LayoutState } from '@/types';
 
 const AppConfig = (props: AppConfigProps) => {

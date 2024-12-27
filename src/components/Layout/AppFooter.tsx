@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import React, { useContext } from 'react';
-import { LayoutContext } from '@providers/layoutcontext';
+import { LayoutContext } from '@/globals/providers/LayoutContext';
 
 const AppFooter = () => {
     const { layoutConfig } = useContext(LayoutContext);

@@ -5,7 +5,7 @@ import { Ripple } from 'primereact/ripple';
 import { classNames } from 'primereact/utils';
 import React, { useEffect, useContext } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import { MenuContext } from '@providers/menucontext';
+import { MenuContext } from '@/globals/providers/MenuContext';
 import { AppMenuItemProps } from '@/types';
 import { usePathname, useSearchParams } from 'next/navigation';
 

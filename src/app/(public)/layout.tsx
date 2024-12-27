@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Layout from '@components/Layout/Layout';
 
 interface AppLayoutProps {
     children: React.ReactNode;
@@ -28,5 +27,5 @@ export const viewport = {
 };
 
 export default function AppLayout({ children }: AppLayoutProps) {
-    return <Layout>{children}</Layout>;
+    return children;
 }
