@@ -25,7 +25,11 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@styles*": ["./src/app/styles/*"],
+      "@components*": ["./src/components/*"],
+      "@providers*": ["./src/globals/providers/*"],
+      "@services*": ["./src/globals/services/*"],
+      "@styles*": ["./src/globals/styles/*"],
+      "@enum*": ["./src/globals/enum/*"],
     }
   },
   "include": [

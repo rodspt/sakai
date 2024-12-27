@@ -2,10 +2,10 @@
 
 import React, { useContext } from 'react';
 import AppMenuitem from './AppMenuitem';
-import { LayoutContext } from './context/layoutcontext';
-import { MenuProvider } from './context/menucontext';
+import { LayoutContext } from '@providers/layoutcontext';
+import { MenuProvider } from '@providers/menucontext';
 import Link from 'next/link';
-import { AppMenuItem } from '@/src/app/types';
+import { AppMenuItem } from '@/types';
 
 const AppMenu = () => {
     const { layoutConfig } = useContext(LayoutContext);
